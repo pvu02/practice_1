@@ -1,0 +1,6 @@
+library(tidyverse)
+raw_data <- read_csv(file="practice_assignment_1_data.csv",na=c("-999"))
+categorical_variables$sex <- as.factor(categorical_variables$sex)
+levels(categorical_variables$sex) <- list("Male"=1,"Female"=2)
+categorical_variables$major <- as.factor(categorical_variables$major)
+levels(categorical_variables$major) <- list("Psychology"=1,"Sociology"=2,"Math"=3,"Engineering"=4,"Science"=5)
